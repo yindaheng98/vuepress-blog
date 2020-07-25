@@ -95,7 +95,14 @@ module.exports = {
     "author": "Howard Yin",
     "authorAvatar": "/avatar.svg",
     "startYear": "2018",
-    "coverImgBase": "/blogs"
+    "coverImgBase": "/blogs",
+    "vssueConfig": {
+      platform: 'github',
+      owner: 'yindaheng98',
+      repo: 'yindaheng98.github.io',
+      clientId: 'a75a1830835fe3098df1',
+      clientSecret: '87051d70dd49e135c6ccd5293c3dd89955d54c20',
+    }
   },
   "markdown": {
     "lineNumbers": true,
