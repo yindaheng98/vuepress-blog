@@ -3,9 +3,10 @@ Thumbs.db
 db.json
 *.log
 node_modules/
-public/
+/public/
 blogs/*
 !blogs/.vuepress
 !blogs/README.md
 blogs/.vuepress/public/*
+!blogs/.vuepress/public/*.*
 .deploy*/
