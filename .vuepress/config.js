@@ -34,6 +34,13 @@ module.exports = {
   ],
   "theme": require.resolve('./theme'),
   "themeConfig": {
+    "repo": 'github.com/yindaheng98/yindaheng98.github.io',
+    "repoLabel": '查看源码',
+    "docsRepo": 'github.com/yindaheng98/My-docs',
+    "docsDir": '学习笔记',
+    "editLinks": true,
+    "editLinkText": '帮助我们改善此页面！',
+    "smoothScroll": true,
     "mode": "light",
     "nav": [
       {
@@ -91,7 +98,7 @@ module.exports = {
     "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "上次更新",
     "author": "Howard Yin",
     "authorAvatar": "/avatar.svg",
     "startYear": "2018",

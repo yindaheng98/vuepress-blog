@@ -113,7 +113,7 @@ export default {
       return false
     },
     lastUpdated () {
-      return this.$page.lastUpdated
+      return this.$frontmatter.lastUpdated || this.$page.lastUpdated
     },
     lastUpdatedText () {
       if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
