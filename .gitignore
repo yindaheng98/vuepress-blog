@@ -4,8 +4,8 @@ db.json
 *.log
 node_modules/
 public/
-blogs/
-!blogs/.vuepress/*
+blogs/*
+!blogs/.vuepress
 !blogs/README.md
-blogs/.vuepress/public/
+blogs/.vuepress/public/*
 .deploy*/
