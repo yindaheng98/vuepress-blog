@@ -28,6 +28,13 @@
 
         <div
           class="last-updated"
+          v-if="lastCreated"
+        >
+          <span class="prefix">{{ lastCreatedText }}: </span>
+          <span class="time">{{ lastCreated }}</span>
+        </div>
+        <div
+          class="last-updated"
           v-if="lastUpdated"
         >
           <span class="prefix">{{ lastUpdatedText }}: </span>
@@ -113,7 +120,7 @@ export default {
       return false
     },
     lastUpdated () {
-      return this.$frontmatter.lastUpdated || this.$page.lastUpdated
+      return this.$frontmatter.updated || this.$page.lastUpdated
     },
     lastUpdatedText () {
       if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
@@ -123,6 +130,18 @@ export default {
         return this.$themeConfig.lastUpdated
       }
       return 'Last Updated'
+    },
+    lastCreated () {
+      return this.$frontmatter.created
+    },
+    lastCreatedText () {
+      if (typeof this.$themeLocaleConfig.lastCreated === 'string') {
+        return this.$themeLocaleConfig.lastCreated
+      }
+      if (typeof this.$themeConfig.lastCreated === 'string') {
+        return this.$themeConfig.lastCreated
+      }
+      return 'Created at'
     },
     prev () {
       const prev = this.$frontmatter.prev
