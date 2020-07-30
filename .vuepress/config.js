@@ -99,7 +99,7 @@ module.exports = {
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "更新于",
-    "lastUpdated": "创建于",
+    "lastCreated": "创建于",
     "author": "Howard Yin",
     "authorAvatar": "/avatar.svg",
     "startYear": "2018",

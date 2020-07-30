@@ -33,6 +33,7 @@
           <span class="prefix">{{ lastCreatedText }}: </span>
           <span class="time">{{ lastCreated }}</span>
         </div>
+        <br>
         <div
           class="last-updated"
           v-if="lastUpdated"
