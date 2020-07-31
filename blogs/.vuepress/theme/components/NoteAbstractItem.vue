@@ -8,7 +8,7 @@
     </div>
     <div v-if="item.frontmatter.cover" class="cover">
       <img
-        :src="($themeConfig.coverImgBase?$themeConfig.coverImgBase:'') + '/' + item.frontmatter.cover"
+        :src="coverSrc"
         alt="封面" class="cover-img">
     </div>
     <div class="abstract" v-html="item.excerpt"></div>
@@ -24,7 +24,27 @@
 import PageInfo from './PageInfo'
 export default {
   components: { PageInfo },
-  props: ['item', 'currentPage', 'currentTag']
+  props: ['item', 'currentPage', 'currentTag'],
+  computed: {
+    coverSrc(){
+      let base = $themeConfig.coverImgBase
+      if(typeof base !== 'string' || base <= 0){
+        base = ''
+      } else if(base !== '/') {
+        if(base[0] === '/'){
+          base = base.slice(1)
+        }
+        if(base[base.length-1] !== '/'){
+          base += '/'
+        }
+      }
+      let path = item.frontmatter.cover
+      if(path[0] !== '/'){
+        path = '/' + path
+      }
+      return base + path;
+    }
+  }
 }
 </script>
 
