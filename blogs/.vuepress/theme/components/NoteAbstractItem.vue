@@ -27,7 +27,7 @@ export default {
   props: ['item', 'currentPage', 'currentTag'],
   computed: {
     coverSrc(){
-      let base = $themeConfig.coverImgBase
+      let base = this.$themeConfig.coverImgBase
       if(typeof base !== 'string' || base <= 0){
         base = ''
       } else if(base !== '/') {
@@ -38,7 +38,7 @@ export default {
           base += '/'
         }
       }
-      let path = item.frontmatter.cover
+      let path = this.item.frontmatter.cover
       if(path[0] !== '/'){
         path = '/' + path
       }
