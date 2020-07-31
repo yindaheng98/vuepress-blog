@@ -39,8 +39,8 @@ export default {
         }
       }
       let path = this.item.frontmatter.cover
-      if(path[0] !== '/'){
-        path = '/' + path
+      if(path[0] === '/'){
+        path = path.slice(1)
       }
       return base + path;
     }
