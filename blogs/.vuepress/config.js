@@ -103,7 +103,7 @@ module.exports = {
     "author": "Howard Yin",
     "authorAvatar": "/avatar.svg",
     "startYear": "2018",
-    "coverImgBase": "",
+    "coverImgBase": "/",
     "vssueConfig": {
       platform: 'github',
       owner: 'yindaheng98',
