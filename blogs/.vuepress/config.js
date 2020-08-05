@@ -42,6 +42,7 @@ module.exports = {
     "editLinkText": '帮助我们改善此页面！',
     "smoothScroll": true,
     "mode": "light",
+    "sidebar": 'auto',
     "nav": [
       {
         "text": "Home",
