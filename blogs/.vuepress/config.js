@@ -65,7 +65,7 @@ module.exports = {
           },
           {
             "text": "Site",
-            "link": "http://yindaheng98.top:8888/",
+            "link": "http://www.yindaheng98.top:30000/",
             "icon": "reco-account"
           }
         ]
