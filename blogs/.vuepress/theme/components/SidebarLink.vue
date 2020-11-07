@@ -58,11 +58,12 @@ function renderLink (h, to, text, active) {
       activeClass: '',
       exactActiveClass: ''
     },
+    domProps:{innerHTML: text},
     class: {
       active,
       'sidebar-link': true
     }
-  }, text)
+  })
 }
 
 function renderChildren (h, children, path, route, maxDepth, depth = 1) {
@@ -70,7 +71,7 @@ function renderChildren (h, children, path, route, maxDepth, depth = 1) {
   return h('ul', { class: 'sidebar-sub-headers' }, children.map(c => {
     const active = isActive(route, path + '#' + c.slug)
     return h('li', { class: 'sidebar-sub-header' }, [
-      renderLink(h, path + '#' + c.slug, c.title, active),
+      renderLink(h, path + '#' + c.slug, c.renderred_title, active),
       renderChildren(h, c.children, path, route, maxDepth, depth + 1)
     ])
   }))

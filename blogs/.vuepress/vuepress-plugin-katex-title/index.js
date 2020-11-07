@@ -15,7 +15,7 @@ module.exports = {
                     [{ left: "$", right: "$", display: false },
                     { left: "$$", right: "$$", display: true },]
             });
-            $page.headers[i].title = el.textContent;
+            $page.headers[i].renderred_title = el.textContent;
         }
     }
 }
