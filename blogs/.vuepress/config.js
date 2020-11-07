@@ -120,6 +120,7 @@ module.exports = {
     }
   },
   "plugins": [
-    'vuepress-plugin-mermaidjs'
+    'vuepress-plugin-mermaidjs',
+    require('./vuepress-plugin-katex-title/index')
   ]
 }
