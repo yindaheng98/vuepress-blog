@@ -148,10 +148,12 @@ function resolveHeaders (page) {
     type: 'group',
     collapsable: false,
     title: page.title,
+    renderred_title: page.renderred_title,
     path: null,
     children: headers.map(h => ({
       type: 'auto',
       title: h.title,
+      renderred_title: h.renderred_title,
       basePath: page.path,
       path: page.path + '#' + h.slug,
       children: h.children || []
