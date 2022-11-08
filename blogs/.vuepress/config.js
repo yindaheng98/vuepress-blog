@@ -55,20 +55,9 @@ module.exports = {
         "icon": "reco-date"
       },
       {
-        "text": "Contact",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://github.com/yindaheng98",
-            "icon": "reco-github"
-          },
-          {
-            "text": "Site",
-            "link": "http://profile.yindaheng98.top",
-            "icon": "reco-account"
-          }
-        ]
+        "text": "About",
+        "link": "http://profile.yindaheng98.top",
+        "icon": "reco-account"
       }
     ],
     "type": "blog",
