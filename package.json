@@ -4,7 +4,7 @@
   "author": "yindaheng98@163.com",
   "scripts": {
     "dev": "vuepress dev blogs",
-    "build": "vuepress build blogs"
+    "build": "node --max_old_space_size=4096 node_modules/vuepress/cli.js build blogs"
   },
   "devDependencies": {
     "vuepress": "1.5.0",
